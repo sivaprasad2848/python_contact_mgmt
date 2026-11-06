@@ -16,10 +16,15 @@ while(y==0):
         #print(name+" "+email+" "+mobile)
         contact.append((name,email,mobile))
     if opt==2:
+<<<<<<< Updated upstream
         for contactid in contact:
             print(contactid)
     if opt==3:
         print("Delete")
     if opt==4:
         print("Update")
+=======
+        print(contact)
+        
+>>>>>>> Stashed changes
     y=int(input("Do you want to continue?(press 0 for yes)"))
