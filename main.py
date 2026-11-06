@@ -4,6 +4,8 @@ while(y==0):
     print(15*"=")
     print("1=>For Insert Contact")
     print("2=>For Display Contact")
+    print("3=>For Delete Contact")
+    print("4=>For Update Contact")
     print("Enter an operation you want to perform")
     opt=int(input("Option Value"))
     print(15*"=")
@@ -16,4 +18,8 @@ while(y==0):
     if opt==2:
         for contactid in contact:
             print(contactid)
+    if opt==3:
+        print("Delete")
+    if opt==4:
+        print("Update")
     y=int(input("Do you want to continue?(press 0 for yes)"))
