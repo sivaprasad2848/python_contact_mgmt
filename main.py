@@ -16,7 +16,8 @@ while(y==0):
         #print(name+" "+email+" "+mobile)
         contact.append((name,email,mobile))
     if opt==2:
-        print(contact)
+        for contactid in contact:
+            print(contactid)
     if opt==3:
         print("Delete")
     if opt==4:
