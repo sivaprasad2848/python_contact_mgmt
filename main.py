@@ -16,15 +16,16 @@ while(y==0):
         #print(name+" "+email+" "+mobile)
         contact.append((name,email,mobile))
     if opt==2:
-<<<<<<< Updated upstream
-        for contactid in contact:
-            print(contactid)
+        for contacts in contact:
+            print(contacts[0]+" "+contacts[1]+" "+contacts[2])
     if opt==3:
-        print("Delete")
+        i=int(input("Enter the index you want to delete"))
+        del contact[i]
     if opt==4:
-        print("Update")
-=======
-        print(contact)
-        
->>>>>>> Stashed changes
+        i=int(input("Enter the index you want to Update"))
+        name=input("Enter Name")
+        email=input("Enter Email")
+        mobile=input("Enter Mobile")
+        contact[i]=(name,email,mobile)
+
     y=int(input("Do you want to continue?(press 0 for yes)"))
