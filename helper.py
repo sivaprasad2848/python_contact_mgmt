@@ -25,3 +25,8 @@ def update_contact():
     email=input("Enter Email")
     mobile=input("Enter Mobile")
     contact[i]=(name,email,mobile)
+def get_contact():
+     return contact
+def set_contact(d):
+     global contact
+     contact=d
