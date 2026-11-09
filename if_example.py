@@ -55,6 +55,7 @@ while i<8:
         j=j+1
     i=i+1
 '''
+'''
 i=1
 while(i<10):
     if(i==3):
@@ -63,6 +64,44 @@ while(i<10):
         continue;
     print(i)
     i=i+1
+    '''
+#File Operation
+# name=input("Enter your name")
+# fp=open("data.txt","w")
+# fp.write(name)
+# fp.close()
+
+# name=input("Enter Your Name")
+# email=input("Enter Email")
+# mobile=input("Enter Mobile")
+# data=name+" "+email+" "+mobile
+# fp=open("data.txt","w")
+# fp.write(data)
+# fp.close()
+def write_to_file(c):
+    fp=open("data.txt","a")
+    for item in c:
+        data=item[0]+" "+item[1]+" "+str(item[2])+"\n"
+        fp.write(data)
+    fp.close()
+contacts=[('sam','sam@gmail.com',8728378),('thaswin','thaswin@gmail.com',800008),('rihan','rihan@gmail.com',8888888)]
+write_to_file(contacts)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
