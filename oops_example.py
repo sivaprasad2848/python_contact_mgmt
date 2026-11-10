@@ -1,6 +1,10 @@
 class vehicle:
 			no_of_tyres=0
 			fuel_type=None
+			def __init__(self):
+				print("This is constructor")
+			def __del__(self):
+				print("This is destrcutor")
 			def set_data(self,t,f):
 				self.no_of_tyres=t
 				self.fuel_type=f
@@ -10,6 +14,3 @@ class vehicle:
 car=vehicle()
 car.set_data(6,"Diesel")
 car.display()
-bus=vehicle()
-bus.set_data(6,"Diesel")
-bus.display()
