@@ -1,24 +1,20 @@
+from helper import *
+from fileop import *
 y=0
-contact=[]
+kdata=read_data_from_file()
+set_expense(kdata)
 while(y==0):
-    print(15*"=")
-    print("1=>For Insert Contact")
-    print("2=>For Display Contact")
-    print("3=>For Delete Contact")
-    print("4=>For Update Contact")
-    print("Enter an operation you want to perform")
-    opt=int(input("Option Value"))
-    print(15*"=")
+    opt=menu()
     if opt==1:
-        name=input("Enter Name")
-        email=input("Enter Email")
-        mobile=input("Enter Mobile")
-        #print(name+" "+email+" "+mobile)
-        contact.append((name,email,mobile))
+        enter_expense()
     if opt==2:
-        print(contact)
+        display_expense()
     if opt==3:
-        print("Delete")
+        delete_expense()
     if opt==4:
-        print("Update")
+        update_expense()
+
     y=int(input("Do you want to continue?(press 0 for yes)"))
+    if y!=0:
+        data1=get_expense()
+        write_to_file(data1)
